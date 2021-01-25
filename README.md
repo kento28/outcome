@@ -1,24 +1,22 @@
-# README
+## アプリケーション名
+Outcome
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 概要
+日々のアウトプットを記録して共有できるアプリ
 
-Things you may want to cover:
+## 特徴
 
-* Ruby version
+## 開発背景
 
-* System dependencies
+## リンク
 
-* Configuration
+## 使用技術
+- Ruby 2.6.5 / Rails 6.0.3.4
+- MySQL
+- Git / GitHub
 
-* Database creation
+## 機能一覧（開発中の機能含む）
 
-* Database initialization
+## ER図
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## テーブル設計
