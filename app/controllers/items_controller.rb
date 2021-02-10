@@ -8,7 +8,7 @@ class ItemsController < ApplicationController
       @user = User.find(current_user.id)
       @my_items = Item.where(user_id: current_user.id).order('created_at DESC')
     end
-    
+
     @items = Item.all.order('created_at DESC')
   end
 
@@ -65,6 +65,4 @@ class ItemsController < ApplicationController
   def block_edit
     redirect_to root_path unless user_signed_in? && @item.user.id == current_user.id
   end
-
 end
-
