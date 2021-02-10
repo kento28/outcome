@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show] do
     resources :profiles, only: [:edit, :update]
   end
+  
+  resources :items
 end

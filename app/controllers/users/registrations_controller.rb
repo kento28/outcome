@@ -12,7 +12,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     super
-    
+
     resource.build_profile
     resource.profile.image.attach(io: File.open('public/images/human_icon.png'), filename: 'human_icon.png')
     resource.save
