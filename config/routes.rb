@@ -5,13 +5,13 @@ Rails.application.routes.draw do
     registrations: 'users/registrations'
   }
 
-
   resources :users, only: [:show] do
     resources :profiles, only: [:edit, :update]
   end
   
   resources :items do
     resources :likes, only: [:create, :destroy]
+    resources :comments, only: [:create, :destroy]
   end
   
 end
