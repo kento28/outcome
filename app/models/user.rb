@@ -20,5 +20,4 @@ class User < ApplicationRecord
   def already_liked?(item)
     likes.exists?(item_id: item.id)
   end
-  
 end
