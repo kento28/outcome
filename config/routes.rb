@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   end
   
   resources :items do
-    resources :likes, only [:create, :destroy]
+    resources :likes, only: [:create, :destroy]
   end
   
 end
