@@ -8,9 +8,6 @@ require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require('jquery')
-document.addEventListener("turbolinks:load", () => {
-  console.log($.fn.jquery)
-})
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
