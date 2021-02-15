@@ -24,4 +24,5 @@ Rails.application.routes.draw do
 
   get '/items/hashtag/:name', to: "items#tag"
   get '/items/category/:id', to: "items#category"
+  get '/hashtags', to: "tags#search"
 end
