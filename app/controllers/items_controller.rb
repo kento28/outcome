@@ -51,7 +51,7 @@ class ItemsController < ApplicationController
     @tag = Tag.find_by(name: params[:name])
     @items = @tag.open.order('created_at DESC')
   end
-  
+
   def category
     @item = Item.find_by(category_id: params[:id])
     @items = Item.open.where(category_id: params[:id]).order('created_at DESC')
@@ -78,9 +78,8 @@ class ItemsController < ApplicationController
     end
   end
 
-
   def correct_user_new
-  redirect_to new_user_registration_path unless user_signed_in?
+    redirect_to new_user_registration_path unless user_signed_in?
   end
 
   def correct_user_edit
