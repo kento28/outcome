@@ -10,11 +10,11 @@
       <div class='users-list-title-content'>
         <% if item.status_before_type_cast == 1 %>
           <div class='users-list-open'>
-            open
+            Open
           </div>
         <% else %>
           <div class='users-list-closed'>
-            closed
+            Closed
           </div>
         <% end %>
         <p><%= link_to "#{item.title}", item_path(item.id) %></p>
