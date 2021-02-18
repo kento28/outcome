@@ -44,4 +44,9 @@ class User < ApplicationRecord
       User.all
     end
   end
+
+  def self.guest
+    find(15)
+  end
+  
 end
