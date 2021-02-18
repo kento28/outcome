@@ -3,6 +3,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
+  before_action :check_guest, only: [:update, :destroy]
 
   # GET /resource/sign_up
   # def new
@@ -47,6 +48,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
     root_path
   end
 
+  def check_guest
+    if resource.email == 'guest@xample.com'
+      redirect_to root_path, alert: 'ゲストユーザーの変更・削除はできません'
+    end
+  end
+  
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.
