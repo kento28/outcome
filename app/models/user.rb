@@ -46,7 +46,7 @@ class User < ApplicationRecord
   end
 
   def self.guest
-    find(15)
+    find_by(username: 'guest')
   end
   
 end

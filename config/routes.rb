@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root to: 'items#index'
 
   devise_for :users, controllers: {
-    registrations: 'users/registrations'
+    registrations: 'users/registrations', password: 'users/passwords'
   }
 
   devise_scope :user do
