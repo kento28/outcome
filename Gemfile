@@ -66,7 +66,8 @@ gem 'rails-i18n'
 gem 'redcarpet', '~> 2.3.0'
 gem 'coderay' 
 
-group :production do
-  gem 'rails_12factor'
-end 
 gem "aws-sdk-s3", require: false
+
+group :production do
+  gem 'unicorn', '5.4.1'
+end
