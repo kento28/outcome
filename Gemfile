@@ -71,3 +71,6 @@ gem "aws-sdk-s3", require: false
 group :production do
   gem 'unicorn', '5.4.1'
 end
+group :production do
+  gem 'rails_12factor'
+end
