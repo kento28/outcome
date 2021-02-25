@@ -40,7 +40,7 @@
     <% if user_signed_in? %>
       <ul class='signed-in-list'>
         <li><%= link_to "✔︎いいね", "/likes/user/#{current_user.id}", class: "like-list-btn" %></li>
-        <li><%= link_to "✔︎","/likes/user/#{current_user.id}", class: 'like-list-btn-small' %>
+        <%# <li><%= link_to "✔︎","/likes/user/#{current_user.id}", class: 'like-list-btn-small' %> 
         <li><%= link_to "✏︎ 投稿", new_item_path, class: "new-item-btn" %></li>
         <li><%= link_to "#{current_user.username.slice(0)}", user_path(current_user.id), class: "account-mark" %></li> 
       </ul>
