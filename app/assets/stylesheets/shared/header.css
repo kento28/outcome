@@ -139,14 +139,21 @@
   display: none;
 }
 
-
-.header-avatar {
+.account-mark {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 10px 13px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+/* .header-avatar {
   width: 35px;
   height: 35px;
   object-fit: cover;
   border: 1px solid burlywood;
   border-radius: 70px;
-}
+} */
 
 .not-signed-in-list {
   display: flex;
