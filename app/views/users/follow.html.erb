@@ -1,26 +1,22 @@
 <%= render "shared/header" %>
-
 <div class='main'>
-
   <%# Left-side %>
   <div class='top-left-content'>   
     <div class='whose-item-list-navi'>
-      <%= image_tag @follower_user.profile.image, class: 'whose-user-avatar'%>
-      <p><%= @follower_user.username%> 's follower</p>
+      <%= image_tag @follow_user.profile.image, class: 'whose-user-avatar'%>
+      <p><%= @follow_user.username%> 's follow</p>
     </div>
     <%# @users リスト展開 %>
+    <%= render 'userlist'%>
     <div id='user-pagenate'>
-      <%= render 'userlist'%>
     </div>
     <%= link_to_next_page @users, 'もっと見る', remote: true, class: 'more-link', id: 'more-link' %>
     <%# // @users リスト展開 %>   
   </div>
   <%# // Left-side %>
-
+  
   <%# Right-side %>
   <%= render 'shared/right_side' %>
   <%# // Right-side %>
-
 </div>
-
-<%= render "shared/footer" %> 
+<%= render "shared/footer" %>
