@@ -69,7 +69,7 @@ class ItemsController < ApplicationController
       @my_items = Item.where(user_id: current_user.id).order('created_at DESC')
     end
   end
-  
+
   private
 
   def item_params

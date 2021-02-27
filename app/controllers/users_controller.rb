@@ -24,7 +24,6 @@ class UsersController < ApplicationController
     end
   end
 
-  
   def follower
     @follower_user = User.find(params[:id])
     @users = @follower_user.followers.order('relationships.created_at DESC').page(params[:page])
@@ -39,5 +38,4 @@ class UsersController < ApplicationController
   def correct_user_follower
     redirect_to root_path unless params[:id] = current_user.id
   end
-
 end
