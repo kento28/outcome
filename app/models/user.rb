@@ -1,6 +1,4 @@
 class User < ApplicationRecord
-
-
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
@@ -26,16 +24,20 @@ class User < ApplicationRecord
   def already_liked?(item)
     likes.exists?(item_id: item.id)
   end
+
   def follow(other_user)
     relationships.find_or_create_by(follow_id: other_user.id) unless self == other_user
   end
+
   def unfollow(other_user)
     relationship = relationships.find_by(follow_id: other_user.id)
     relationship.destroy if relationship
   end
+
   def following?(other_user)
     followings.include?(other_user)
   end
+
   def self.search(search)
     if search != ''
       User.where('username LIKE(?)', "%#{search}%")
@@ -43,8 +45,8 @@ class User < ApplicationRecord
       User.all
     end
   end
+
   def self.guest
     find_by(username: 'guest')
   end
-  
 end

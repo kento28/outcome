@@ -49,11 +49,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   def check_guest
-    if resource.email == 'guest@xample.com'
-      redirect_to root_path, alert: 'ゲストユーザーの変更・削除はできません'
-    end
+    redirect_to root_path, alert: 'ゲストユーザーの変更・削除はできません' if resource.email == 'guest@xample.com'
   end
-  
+
   # protected
 
   # If you have extra params to permit, append them to the sanitizer.

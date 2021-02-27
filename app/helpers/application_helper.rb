@@ -37,7 +37,7 @@ module ApplicationHelper
       lax_html_blocks: true,
       strikethrough: true
     }
-    
+
     markdown = Redcarpet::Markdown.new(html_render, options)
     markdown.render(text)
   end
