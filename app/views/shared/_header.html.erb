@@ -11,13 +11,13 @@
         <%= link_to "/likes/user/#{current_user.id}" do %>
           <li class="like-list-btn">
             <%= image_tag "icon-like-white.png", class: "icon-like-white" %>
-            <p>LIKE</p>
+            <p>いいね</p>
           </li>
         <% end %>
         <%= link_to new_item_path do %>
           <li class="new-item-btn">
             <%= image_tag "icon-new-white.png", class: "icon-new-white" %>
-            <p>NEW</p>
+            <p>投稿</p>
           </li>
         <% end %>
         <li><%= link_to image_tag(current_user.profile.image, class: "header-avatar"), user_path(current_user.id) %></li>
