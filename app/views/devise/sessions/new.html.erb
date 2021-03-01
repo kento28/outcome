@@ -9,11 +9,11 @@
     ログイン
   </div>
 
+  <div class= "sign-bottom-content">
+
     <%# SNS認証 %>
     <%= render "shared/sign_sns_omniauth"%>
     <%# // SNS認証 %>
-
-  <div class= "sign-bottom-content">
 
     <div class="sign-form-box">
       <%= form_with model: @user, url: '/users/sign_in', local: true do |f| %>
