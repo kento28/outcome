@@ -36,7 +36,7 @@ input[type="text"] {
 }
 
 .second-box {
-  height: 33%;
+  height: 25%;
   display: flex;
   justify-content: space-between;
 }
@@ -52,7 +52,7 @@ input[type="text"] {
 
 .category-list {
   display: flex;
-  font-family: monospace;
+  font-weight: bold;
   font-size: 14px;
   margin-left: 5px;
 }
