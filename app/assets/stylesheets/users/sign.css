@@ -149,12 +149,12 @@
   height: 38px;
   margin-top: 3px;
   padding: 5px 20px;
-  background-color: burlywood;
+  background-color: #3ccace;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   border-radius: 3px;
-  border: 1px solid burlywood;
+  border: 1px solid #3ccace;
 } 
 
 .session-btn {
@@ -163,12 +163,12 @@
   margin-top: 3px;
   margin-bottom: 10px;
   padding: 5px 20px;
-  background-color: burlywood;
+  background-color: #3ccace;
   color: #fff;
   font-size: 14px;
   font-weight: bold;
   border-radius: 3px;
-  border: 1px solid burlywood;
+  border: 1px solid #3ccace;
 }
 
 .sign-sns-box {
