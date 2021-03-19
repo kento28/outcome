@@ -328,8 +328,7 @@
 }
 
 .show-bottom-first {
-  height: 20px;
-  width: 100%;
+  margin: 20px 20px 0;
 }
 
 .show-bottom-second {
