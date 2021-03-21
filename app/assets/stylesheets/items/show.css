@@ -331,6 +331,11 @@
   margin: 20px 20px 0;
 }
 
+.icon-twitter-white-circle {
+  width: 35px;
+  margin-right: 10px;
+}
+
 .show-bottom-second {
   height: 0px;
   display: flex;
