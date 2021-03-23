@@ -336,6 +336,11 @@
   margin-right: 10px;
 }
 
+.icon-line-white-circle {
+  width: 35px;
+  margin-right: 10px;
+}
+
 .show-bottom-second {
   height: 0px;
   display: flex;
@@ -401,7 +406,7 @@
   border: 1px solid yellowgreen;
   border-radius: 10px;
   color: #fff;
-  font-size: 15px;
+  font-size: 14px;
   background-color: yellowgreen;
   padding: 3px 10px;
   margin-right: 5px;
