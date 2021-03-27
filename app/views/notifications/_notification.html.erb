@@ -13,7 +13,7 @@
           <% when "follow" then %>
             があなたをフォローしました
           <% when "like" then %>
-            があなたの投稿<%= link_to "「#{notification.item.title.truncate(20)}」", notification.item %>をLIKEしました
+            があなたの投稿<%= link_to "「#{notification.item.title.truncate(20)}」", notification.item %>をいいねしました
           <% when "comment" then %>
             <% if notification.item.user_id == notification.visited_id %>
               があなたの投稿<%= link_to "「#{notification.item.title.truncate(20)}」", notification.item %>にコメントしました
