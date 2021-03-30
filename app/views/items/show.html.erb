@@ -40,7 +40,7 @@
       <div class='show-top-communication'>
         <div class='show-top-communication-left' id="like-btn-<%= @item.id %>">
           <%# LIKEボタン%>
-          <%= render partial: 'like', locals: { item: @item } %>
+          <%= render 'like', item: @item %>
           <%# // LIKEボタン%>
         </div>
         <div class='show-top-communication-right'>
