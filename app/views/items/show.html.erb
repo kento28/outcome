@@ -10,7 +10,7 @@
           <%= link_to @item.user.username, user_path(@item.user.id), class: 'show-top-username' %>   
           <span class='show-top-updated_at'><%= @item.updated_at.strftime('20%y.%m/%d')  %> 更新</span>
         </div>
-        <div class='show-top-command'>
+        <div class='show-top-command' id="follow-btn-<%= @item.user.id %>">
         <% if user_signed_in? && @item.user.id == current_user.id  %>
             <%= link_to '編集する', edit_item_path(@item.id), class:'item-edit-btn' %>
           <% elsif user_signed_in? %>
