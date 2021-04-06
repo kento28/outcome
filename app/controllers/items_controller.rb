@@ -3,6 +3,7 @@ class ItemsController < ApplicationController
   before_action :set_user_items, only: [:index, :tag, :category, :search, :timeline]
   before_action :correct_user_new, only: :new
   before_action :correct_user_edit, only: :edit
+  before_action :correct_user_show, only: :show
   before_action :correct_user_timeline, only: :timeline
 
   def index
