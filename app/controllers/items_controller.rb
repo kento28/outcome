@@ -102,6 +102,10 @@ class ItemsController < ApplicationController
     redirect_to root_path unless user_signed_in? && @item.user.id == current_user.id
   end
 
+  def correct_user_show
+  
+  end
+  
   def correct_user_timeline
     redirect_to root_path unless user_signed_in? && params[:id] = current_user.id
   end
