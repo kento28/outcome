@@ -103,7 +103,7 @@ class ItemsController < ApplicationController
   end
 
   def correct_user_show
-    if 
+    if @item.closed?
 
     end
   end
