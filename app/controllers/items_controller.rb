@@ -104,7 +104,7 @@ class ItemsController < ApplicationController
 
   def correct_user_show
     if @item.closed?
-      redirect_to root_path
+      redirect_to root_path unless @item.user == current_user
     end
   end
 
