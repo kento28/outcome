@@ -132,6 +132,10 @@
     padding: 10px 0;
   }
 
+  .icon-home-brown {
+    display: none;
+  }
+
   .tl-list-btn {
     display: none;
   }
