@@ -6,7 +6,7 @@
 }
 
 .user-left-content {
-  width: calc(100% - 230px);
+  width: calc(100% - 350px);
   margin: 10px 10px 10px 10px;
   display: flex;
   flex-direction: column;
