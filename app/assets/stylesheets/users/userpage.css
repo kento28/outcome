@@ -7,7 +7,8 @@
 
 .user-left-content {
   width: calc(100% - 350px);
-  margin: 10px 10px 10px 10px;
+  max-width: 700px;
+  margin: 10px 20px 10px 0;
   display: flex;
   flex-direction: column;
   background-color: #fff;
